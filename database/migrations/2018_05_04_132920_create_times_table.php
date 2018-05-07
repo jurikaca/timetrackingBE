@@ -17,7 +17,8 @@ class CreateTimesTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('user_id');
             $table->dateTime('start_date');
-            $table->time('time_tracked');
+            $table->bigInteger('time_tracked')->comment('Time tracked in seconds');
+            $table->time('time_tracked_formatted')->comment('Time tracked in time format hh:ii:ss');
             $table->text('description');
             $table->timestamp('timestamp');
         });
