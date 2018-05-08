@@ -16,7 +16,7 @@ class CreateTimesTable extends Migration
         Schema::create('times', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('user_id');
-            $table->dateTime('start_date');
+            $table->dateTime('date_finished');
             $table->bigInteger('time_tracked')->comment('Time tracked in seconds');
             $table->time('time_tracked_formatted')->comment('Time tracked in time format hh:ii:ss');
             $table->text('description');
