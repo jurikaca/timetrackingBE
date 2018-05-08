@@ -30,7 +30,7 @@ Or you can download and unzip the compressed file on the desired location of you
 ##### 2. Setup project
 Before you start on the steps below be sure that you have installed composer
 - Now that you are at the root of app run `composer install` to install all the dependencies.
-- Then open `.env` file to change the information related to your database credentials. If `.env` file is not created the you should create yourself by copying `.env.example`
+- Then open `.env` file to change the information related to your database credentials. If `.env` file is not created the you should create yourself by copying `.env.example`. Then you should run `php artisan key:generate` to create app key
 - After this you should create an empty database named exaclty as you entered on `.env` file creadentials.
 - Then run `php artisan migrate` to create the db structure and `php artisan db:seed` to create initial data (actually one user record for testing)
 - Next step is to add virtual host for this project. Navigate on your local apache vhosts-config to add this code
