@@ -1,5 +1,7 @@
 # Timetracker
 
+This back-end of the project is built with laravel 5.6, php version 7.1.3.
+
 ## Project Overview
 
 ##### 1. Time Frame of the whole back-end part
